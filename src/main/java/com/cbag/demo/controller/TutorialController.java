@@ -29,6 +29,10 @@ public class TutorialController {
     @Autowired
     TutorialRepository tutorialRepository;
 
+    public TutorialController() {
+        System.out.println("TutorialController()");
+    }
+
     @GetMapping("/tutorials")
     public ResponseEntity<List<Tutorial>> getAllTutorials(@RequestParam(required = false) String title) {
         try {
