@@ -28,7 +28,7 @@ public class TutorialController {
     TutorialRepository tutorialRepository;
 
     public TutorialController() {
-        System.out.println("TutorialController()");
+    //    System.out.println("TutorialController()");
     }
 
     @GetMapping("/tutorials")
